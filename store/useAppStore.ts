@@ -57,7 +57,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     try {
       set({ isLoading: true });
 
-      const [calendar, menu, allergens] = await Promise.all([
+      const [calendar, menu, infoAlimenti] = await Promise.all([
         fetch("/data/menu-calendar.json").then((r) => r.json()),
         fetch("/data/menu-data.json").then((r) => r.json()),
         fetch("/data/info-alimenti.json").then((r) => r.json()),
@@ -72,7 +72,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       set({
         calendarData: calendar,
         menuData: menu,
-        infoAlimenti: allergens,
+        infoAlimenti: infoAlimenti,
         selectedDate: nextDate || new Date(),
         currentMenu,
         isLoading: false,

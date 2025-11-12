@@ -1,0 +1,165 @@
+{
+  "weeks": {
+    "1": {
+      "monday": {
+        "primo": "Vellutata di zucca con riso (inverno) / Vellutata di zucchine con riso (estate)",
+        "secondo": "Prosciutto cotto",
+        "contorno": "Piselli in umido*",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione",
+        "note": "Prosciutto senza lattati/caseinati/polifosfati"
+      },
+      "tuesday": {
+        "primo": "Pasta al sugo di pinoli e erbe aromatiche (inverno) / Pasta al pesto (estate)",
+        "secondo": "Filetti di merluzzo* al pomodoro (inverno) / Filetti di merluzzo* al verde (estate)",
+        "contorno": "Carote in insalata",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "wednesday": {
+        "primo": "Passato di verdura e legumi con bulghur",
+        "secondo": "Pizza margherita",
+        "pane": "Grissini",
+        "frutta": "Frutta fresca di stagione",
+        "note": "Solo secondarie: Pizza margherita (piatto unico) + Banana e budino al cioccolato"
+      },
+      "thursday": {
+        "primo": "Pasta all'olio extravergine di oliva",
+        "secondo": "Carne di vitellone all'uccelletto",
+        "contorno": "Purea di patate",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "friday": {
+        "primo": "Pasta al sugo di pomodoro",
+        "secondo": "Polpettine di piselli*",
+        "contorno": "Insalata verde",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      }
+    },
+    "2": {
+      "monday": {
+        "primo": "Risotto allo zafferano",
+        "secondo": "Tonno sott'olio",
+        "contorno": "Patate lessate",
+        "pane": "Grissini",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "tuesday": {
+        "primo": "Pasta all'olio extravergine di oliva",
+        "secondo": "Coscia di pollo al forno",
+        "contorno": "Finocchi in insalata (inverno) / Pomodori in insalata (estate)",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "wednesday": {
+        "primo": "Minestra di verdure con farro",
+        "secondo": "Bocconcini di lonza alle mele",
+        "contorno": "Carote in insalata o lessate",
+        "pane": "Pane comune",
+        "dolce": "Mousse di frutta mista"
+      },
+      "thursday": {
+        "primo": "Pasta al ragù di vitellone",
+        "formaggio": "Parmigiano reggiano",
+        "contorno": "Fagiolini saltati* (inverno) / Zucchine trifolate (estate)",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "friday": {
+        "primo": "Pasta al pesto",
+        "secondo": "Hamburger vegetale",
+        "contorno": "Insalata verde (per secondaria e adulti)",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      }
+    },
+    "3": {
+      "monday": {
+        "primo": "Pasta all'olio extravergine di oliva",
+        "secondo": "Polpettone di fagiolini* (inverno) / Sformato di zucchine (estate)",
+        "contorno": "Insalata verde (per secondaria e adulti)",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "tuesday": {
+        "primo": "Passato di verdura e legumi senza pasta (inverno) / Pasta e ceci al pomodoro (estate)",
+        "secondo": "Pizza margherita (inverno) / Mozzarella (estate)",
+        "contorno": "Pomodori in insalata (solo estate)",
+        "pane": "Grissini",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "wednesday": {
+        "primo": "Pansoti o ravioli di magro al burro e salvia",
+        "secondo": "Bocconcini di pollo con olive e pinoli",
+        "contorno": "Carote saltate con aromi",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "thursday": {
+        "primo": "Pasta al pesto",
+        "secondo": "Arrosto di lonza",
+        "contorno": "Patate lessate",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "friday": {
+        "primo": "Riso al pomodoro",
+        "secondo": "Crocchette di mare*",
+        "contorno": "Cavolo cappuccio in insalata (inverno) / Insalata verde (estate)",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      }
+    },
+    "4": {
+      "monday": {
+        "primo": "Pasta al sugo di pomodoro (infanzia/inverno) / Lasagne al pomodoro al forno (primaria/inverno) / Pasta al sugo di pomodoro (estate)",
+        "secondo": "Formaggio asiago (inverno) / Mozzarella (estate)",
+        "contorno": "Insalata mista (inverno) / Pomodori in insalata (estate)",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "tuesday": {
+        "primo": "Pasta all'olio extravergine di oliva",
+        "secondo": "Polpette di vitellone al pomodoro",
+        "contorno": "Purea di patate",
+        "pane": "Grissini",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "wednesday": {
+        "primo": "Pasta al pesto",
+        "secondo": "Tortino di pesce (merluzzo*) al forno (inverno) / Filetti di merluzzo* al verde (estate)",
+        "contorno": "Bietole* saltate con parmigiano (inverno) / Pomodori in insalata (estate)",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione"
+      },
+      "thursday": {
+        "primo": "Crema di legumi (piselli o fagioli cannellini) con orzetti",
+        "secondo": "Bocconcini di pollo impanati",
+        "contorno": "Insalata verde",
+        "pane": "Pane comune",
+        "frutta": "Frutta fresca di stagione",
+        "note": "Solo secondarie: Panino con cotoletta di pollo impanata e ketchup + Insalata verde + Frutta fresca di stagione e yogurt"
+      },
+      "friday": {
+        "primo": "Risotto allo zafferano",
+        "secondo": "Torta pasqualina",
+        "pane": "Pane comune",
+        "dolce": "Mousse di frutta mista"
+      }
+    }
+  },
+  "seasonInfo": {
+    "winter": {
+      "start": "11-01",
+      "end": "04-15",
+      "description": "Menu invernale: dal 1° lunedì di novembre al 2° venerdì di aprile"
+    },
+    "summer": {
+      "start": "04-16",
+      "end": "10-31",
+      "description": "Menu estivo: dal lunedì successivo (dopo aprile) fino a tutto ottobre"
+    }
+  }
+}

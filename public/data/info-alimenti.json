@@ -1,0 +1,105 @@
+{
+  "generalInfo": {
+    "title": "Informazioni Alimenti e Allergie",
+    "description": "Menu Scolastico 2025-2026 - Comune di Genova",
+    "lastUpdate": "Giugno 2025",
+    "credits": "Redazione: Ufficio Nutrizione e Dietetica, Dietista Cristina Cian. Approvato da: ASL3 Liguria Igiene degli Alimenti e della Nutrizione"
+  },
+  "notes": {
+    "frozen": "* = prodotto surgelato (possono essere utilizzate altre verdure surgelate oltre a quelle indicate)",
+    "bread": "Il pane integrale viene servito almeno una volta a settimana",
+    "cohabitation": "Le scuole infanzia in coabitazione con le primarie (gestione esternalizzata) serviranno le lasagne al pomodoro al forno (lunedì della 4° settimana)"
+  },
+  "agePreparations": {
+    "primary": {
+      "title": "Scuole Primarie e Secondarie",
+      "items": ["Carote e finocchi in insalata: porzionati alla julienne"]
+    },
+    "infant": {
+      "title": "Scuole Infanzia",
+      "items": [
+        "NON tagliare nessun alimento a rondelle",
+        "Mozzarella: tagliata a piccoli dadini",
+        "Tagliare a piccoli pezzetti: carote e finocchi cotti, pomodori, olive, mele, pere",
+        "Carote crude: partire da rondelle poi tagliare alla julienne"
+      ]
+    }
+  },
+  "emergencyMenu": {
+    "external": {
+      "title": "Cucine esternalizzate",
+      "items": [
+        "Pasta al pomodoro",
+        "Parmigiano Reggiano",
+        "Grissini",
+        "Succo di frutta",
+        "Acqua minerale"
+      ]
+    },
+    "delivered": {
+      "title": "Pasti veicolati",
+      "items": [
+        "Tonno",
+        "Succo di frutta",
+        "Grissini",
+        "Acqua minerale",
+        "Budino al cacao"
+      ]
+    }
+  },
+  "organicFoods": {
+    "title": "Alimenti Biologici (CAM)",
+    "items": [
+      "Omogeneizzato di frutta, carne, pesce, formaggio",
+      "Yogurt alla banana",
+      "Olio extravergine di oliva",
+      "Banana",
+      "Latte",
+      "Uova",
+      "Succo di frutta"
+    ],
+    "percentages": [
+      "Frutta, ortaggi, legumi, cereali: biologici per almeno il 50% in peso",
+      "Uova: biologiche al 100%",
+      "Salumi e formaggi: almeno il 30% in peso biologico",
+      "Latte e yogurt: biologico al 100%",
+      "Olio extravergine di oliva: biologico per almeno il 40%",
+      "Pelati, polpa e passata di pomodoro: almeno il 33% in peso biologici",
+      "Succhi di frutta: biologici al 100%",
+      "Carne bovina: biologica per almeno il 50% in peso",
+      "Carne suina: biologica per almeno il 10% in peso",
+      "Carne avicola: biologica per almeno il 20% in peso",
+      "Omogeneizzati: 100% biologici"
+    ]
+  },
+  "dopFoods": {
+    "title": "Alimenti DOP",
+    "items": [
+      "Basilico",
+      "Olio extravergine di oliva",
+      "Formaggio asiago",
+      "Parmigiano Reggiano"
+    ]
+  },
+  "fairTrade": {
+    "title": "Alimenti Equosolidali",
+    "items": ["Banana"]
+  },
+  "madeInItaly": {
+    "title": "Alimenti Made in Italy",
+    "items": [
+      "Olio extravergine di oliva",
+      "Pasta di grano italiano",
+      "Pelati/passata di pomodoro",
+      "Riso di origine nazionale"
+    ]
+  },
+  "noAddedSugar": {
+    "title": "Alimenti Senza Zuccheri Aggiunti",
+    "items": ["Succo di frutta"]
+  },
+  "sustainableFishing": {
+    "title": "Alimenti da Pesca Sostenibile",
+    "items": ["Pesce certificato MSC (Marine Stewardship Council)"]
+  }
+}

@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Colori tema chiaro - MODIFICA QUESTI VALORI PER CAMBIARE IL TEMA */
+    --color-primary: #7dd3c0; /* Verde acqua */
+    --color-primary-light: #a8e6d7;
+    --color-primary-dark: #5dbfab;
+    --color-secondary: #ffe66d; /* Giallo limone */
+    --color-secondary-light: #fff2a8;
+    --color-accent: #ff6b6b; /* Corallo */
+    --color-background: #f8fff4; /* Bianco verdolino */
+    --color-background-card: #ffffff;
+  }
+
+  .dark {
+    /* Colori tema scuro */
+    --color-primary: #5dbfab;
+    --color-primary-light: #7dd3c0;
+    --color-primary-dark: #4a9b8a;
+    --color-secondary: #e6d061;
+    --color-secondary-light: #f0dc7a;
+    --color-accent: #e85d5d;
+    --color-background: #1a1a1a;
+    --color-background-card: #2d2d2d;
+  }
+
+  * {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+
+  body {
+    @apply bg-background text-gray-900 dark:text-gray-100;
+    font-family: var(--font-geist-sans, system-ui, sans-serif);
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-background-card rounded-2xl shadow-lg p-4 border border-gray-100 dark:border-gray-700;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-gray-800 font-semibold py-3 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-95;
+  }
+
+  /* Custom DayPicker Styles - Sovrascrivi TUTTE le variabili rdp */
+  .custom-daypicker {
+    font-family: inherit;
+    /* Sovrascrivi tutte le variabili CSS di react-day-picker */
+    --rdp-accent-color: var(--color-primary) !important;
+    --rdp-accent-background-color: var(--color-primary-light) !important;
+    --rdp-background-color: transparent !important;
+    --rdp-day-height: 2.5rem;
+    --rdp-day-width: 2.5rem;
+  }
+
+  .custom-daypicker .rdp-root {
+    --rdp-accent-color: var(--color-primary) !important;
+  }
+
+  .custom-daypicker .rdp-months {
+    background: transparent;
+  }
+
+  .custom-daypicker .rdp-month_caption {
+    color: var(--color-primary);
+  }
+
+  .custom-daypicker
+    .rdp-day_button:hover:not([disabled]):not(.rdp-day_selected) {
+    background-color: color-mix(
+      in srgb,
+      var(--color-primary) 10%,
+      transparent
+    ) !important;
+    border-radius: 0.5rem;
+  }
+
+  .custom-daypicker .rdp-day_button.rdp-day_selected,
+  .custom-daypicker .rdp-day_button.rdp-day_selected:hover,
+  .custom-daypicker .rdp-day_button.rdp-day_selected:focus {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none !important;
+    outline: none !important;
+  }
+
+  .custom-daypicker .rdp-day_button.rdp-day_today:not(.rdp-day_selected) {
+    font-weight: 700;
+    color: var(--color-primary) !important;
+    background-color: color-mix(
+      in srgb,
+      var(--color-secondary) 20%,
+      transparent
+    ) !important;
+  }
+
+  .custom-daypicker .rdp-day_button {
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    border: none !important;
+  }
+
+  .custom-daypicker .rdp-caption_label {
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-primary-dark) !important;
+  }
+
+  .custom-daypicker .rdp-weekday {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--color-primary) !important;
+  }
+
+  .custom-daypicker .rdp-nav_button,
+  .custom-daypicker .rdp-nav_button svg {
+    color: var(--color-primary) !important;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  .custom-daypicker .rdp-nav_button:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--color-primary) 15%,
+      transparent
+    ) !important;
+  }
+
+  .custom-daypicker .rdp-day_button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  /* Rimuovi ogni traccia di blu */
+  .custom-daypicker * {
+    border-color: var(--color-primary) !important;
+  }
+
+  .custom-daypicker button:focus-visible {
+    outline: 2px solid var(--color-primary) !important;
+    outline-offset: 2px;
+  }
+}

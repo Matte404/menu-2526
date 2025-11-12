@@ -40,7 +40,10 @@ export default function RootLayout({
             __html: `
               if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js').then(
+                  const basePath = '${
+                    process.env.NODE_ENV === "production" ? "/menu-2526" : ""
+                  }';
+                  navigator.serviceWorker.register(basePath + '/sw.js', { scope: basePath + '/' }).then(
                     function(registration) {
                       console.log('ServiceWorker registration successful');
                     },

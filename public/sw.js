@@ -1,7 +1,6 @@
 const CACHE_NAME = 'menu-scuola-v1';
 const urlsToCache = [
   '/',
-  '/home/',
   '/globals.css',
   '/manifest.json',
   '/data/menu-calendar.json',

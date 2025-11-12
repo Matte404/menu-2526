@@ -12,7 +12,7 @@ export default function Drawer({ isOpen, onClose }: DrawerProps) {
   const pathname = usePathname();
 
   const menuItems = [
-    { label: "Menu", href: "/home", icon: "🍽️" },
+    { label: "Menu", href: "/", icon: "🍽️" },
     { label: "Info Alimenti", href: "/info-alimenti", icon: "🌱" },
   ];
 

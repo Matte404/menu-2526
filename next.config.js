@@ -1,8 +1,10 @@
+const { BASE_PATH } = require('./lib/config');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/menu-2526' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/menu-2526/' : '',
+  basePath: BASE_PATH,
+  assetPrefix: BASE_PATH ? BASE_PATH + '/' : '',
   images: {
     unoptimized: true,
   },

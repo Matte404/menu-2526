@@ -1,3 +1,4 @@
+import { apiFetch } from "@/lib/api";
 import { getMenuForDate, getNextAvailableDate } from "@/lib/utils";
 import type { CalendarData, InfoAlimenti, MenuData } from "@/types";
 import { create } from "zustand";
@@ -58,9 +59,9 @@ export const useAppStore = create<AppState>((set, get) => ({
       set({ isLoading: true });
 
       const [calendar, menu, infoAlimenti] = await Promise.all([
-        fetch("/data/menu-calendar.json").then((r) => r.json()),
-        fetch("/data/menu-data.json").then((r) => r.json()),
-        fetch("/data/info-alimenti.json").then((r) => r.json()),
+        apiFetch("/data/menu-calendar.json").then((r) => r.json()),
+        apiFetch("/data/menu-data.json").then((r) => r.json()),
+        apiFetch("/data/info-alimenti.json").then((r) => r.json()),
       ]);
 
       // Set initial date to today or next available date

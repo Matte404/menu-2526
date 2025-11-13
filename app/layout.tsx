@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const basePath = process.env.NODE_ENV === "production" ? "/menu-2526" : "";
+
 export const metadata: Metadata = {
   title: "Menù Scuola - Menu Settimanale 2025-2026",
   description:
     "Menu settimanale della scuola primaria per l'anno scolastico 2025-2026",
-  manifest: "/manifest.json",
+  manifest: `${basePath}/manifest.json`,
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -29,9 +31,12 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/icons/icon-192x192.png" />
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-        <meta name="apple-mobile-web-app-title" content="Menù" />
+        <link rel="icon" href={`${basePath}/icons/icon-192x192.png`} />
+        <link
+          rel="apple-touch-icon"
+          href={`${basePath}/icons/icon-192x192.png`}
+        />
+        <meta name="apple-mobile-web-app-title" content="Menù Scuola" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=no" />
@@ -40,17 +45,29 @@ export default function RootLayout({
             __html: `
               if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function() {
-                  const basePath = '${
-                    process.env.NODE_ENV === "production" ? "/menu-2526" : ""
-                  }';
-                  navigator.serviceWorker.register(basePath + '/sw.js', { scope: basePath + '/' }).then(
-                    function(registration) {
-                      console.log('ServiceWorker registration successful');
-                    },
-                    function(err) {
-                      console.log('ServiceWorker registration failed: ', err);
-                    }
-                  );
+                  const basePath = '${basePath}';
+                  const swPath = basePath ? basePath + '/sw.js' : '/sw.js';
+                  const swScope = basePath ? basePath + '/' : '/';
+                  
+                  navigator.serviceWorker.register(swPath, { scope: swScope })
+                    .then(function(registration) {
+                      console.log('[PWA] Service Worker registered successfully:', registration.scope);
+                      
+                      // Check for updates
+                      registration.addEventListener('updatefound', function() {
+                        const newWorker = registration.installing;
+                        console.log('[PWA] New Service Worker found, installing...');
+                        
+                        newWorker.addEventListener('statechange', function() {
+                          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            console.log('[PWA] New Service Worker installed, refresh to activate');
+                          }
+                        });
+                      });
+                    })
+                    .catch(function(err) {
+                      console.error('[PWA] Service Worker registration failed:', err);
+                    });
                 });
               }
             `,
